@@ -1,4 +1,8 @@
-
+const preloader = document.getElementById("preloader")
+setTimeout(() => {
+    document.getElementById("preloder").classList.add("d-none");
+    document.body.classList.remove("overflow_hidden")
+}, 3000)
 let a = document.getElementById("nav");
 let flow = document.querySelector(".flow");
 let cross4 = document.querySelector(".cross-4");
@@ -67,9 +71,4 @@ test.addEventListener("click", function () {
 });
 
 
-const preloder = document.getElementById("preloder")
-setTimeout(() => {
-    document.getElementById("preloder").classList.add("d-none");
-    document.body.classList.remove("overflow-hidden")
-}, 2000)
 
